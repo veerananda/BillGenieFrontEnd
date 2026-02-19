@@ -11,6 +11,7 @@ export const store = configureStore({
         tables: tablesReducer,
         profile: profileReducer,
     },
+    devTools: __DEV__, // Disable Redux DevTools in production
 });
 
 export type RootState = ReturnType<typeof store.getState>;
